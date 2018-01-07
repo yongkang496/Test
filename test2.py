@@ -12,10 +12,21 @@ Date = '2018/1/6'
 # print(power(5,2))
 # print(power(5,3))
 
-def calc(numbers):
+# def calc(numbers):
+#     sum = 0
+#     for n in numbers:
+#         sum = sum + n * n
+#     return sum
+#
+# print(calc([1,2,3]))
+
+'''
+可变参数
+'''
+def calc(*numbers):
     sum = 0
     for n in numbers:
         sum = sum + n * n
     return sum
 
-print(calc([1,2,3]))
+print(calc(1,2,3))
